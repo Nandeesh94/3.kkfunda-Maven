@@ -292,3 +292,21 @@ ANS:
    mvn clean package -DskipTests  ---> It will skip only unit test cases but compilation will done
 
    mvn clean package -Dmaven.test.skip=true ---> It will skip unit test cases and comilation also 
+
+
+-------------------------------------------------------------------------------------------------------------------
+drwxr-xr-x. 3 root root   17 Sep 19 17:47 classes
+drwxr-xr-x. 3 root root   25 Sep 19 17:47 generated-sources
+drwxr-xr-x. 3 root root   30 Sep 19 17:47 generated-test-sources
+drwxr-xr-x. 2 root root   28 Sep 19 17:47 maven-archiver
+-rw-r--r--. 1 root root 3329 Sep 19 17:47 maven-standalone-application-0.0.1-SNAPSHOT.jar          : this is our jar file
+drwxr-xr-x. 3 root root   35 Sep 19 17:47 maven-status
+drwxr-xr-x. 2 root root  101 Sep 19 17:47 surefire-reports
+drwxr-xr-x. 3 root root   17 Sep 19 17:47 test-classes
+
+[root@ip-172-31-20-65 target]# java -jar maven-standalone-application-0.0.1-SNAPSHOT.jar
+Hello Welcome to Maven Build Tool !! Today Date is:  Fri Sep 19 17:50:49 UTC 2025
+[root@ip-172-31-20-65 target]#
+
+
+
