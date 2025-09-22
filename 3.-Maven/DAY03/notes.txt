@@ -98,8 +98,7 @@ mvn clean package -DskipTests                   :Maven to compile and package yo
 ---------------------------------------------------------------------
 1.server to local:
 
-scp -i "C:\Users\pathw\Downloads\cloudanddevopsbynandeesh.pem" ec2-user@3.91.31.32:/opt/apache-maven-3.9.11-bin.zip "C:\Users\pathw\Downloads"
-
+scp -i "C:\Users\pathw\Downloads\kkfunda.pem" -r ec2-user@3.80.81.125:/opt/apache-maven-3.9.11 "C:\Users\pathw\Downloads"
 c:\Users\pathw>cd Downloads
 3️⃣ Directly check the file.
 dir C:\Users\pathw\Downloads\apache-maven-3.9.11-bin.zip
