@@ -103,6 +103,21 @@ scp -i "C:\Users\pathw\Downloads\cloudanddevopsbynandeesh.pem" ec2-user@3.91.31.
 c:\Users\pathw>cd Downloads
 3️⃣ Directly check the file.
 dir C:\Users\pathw\Downloads\apache-maven-3.9.11-bin.zip
+----------------------------------------------------------------------------------------------------------
+In GitBash
+
+scp -i "/c/Users/pathw/Downloads/kkfunda.pem" ec2-user@3.80.81.125:/opt/apache-maven-3.9.11/README.txt "/c/Users/pathw/Downloads/"
+Download an entire folder:
+scp -i "/c/Users/pathw/Downloads/kkfunda.pem" -r ec2-user@3.80.81.125:/opt/apache-maven-3.9.11 "/c/Users/pathw/Downloads/"
+ls -l
+
+
+
+Upload a file from local to server:
+scp -i "/c/Users/pathw/Downloads/kkfunda.pem" "/c/Users/pathw/Downloads/myfile.txt" ec2-user@3.80.81.125:/home/ec2-user/
+
+
+
 
 -------------------------------------------------------------
 2.Local to server:
