@@ -103,7 +103,18 @@ c:\Users\pathw>cd Downloads
 3️⃣ Directly check the file.
 dir C:\Users\pathw\Downloads\apache-maven-3.9.11-bin.zip
 ----------------------------------------------------------------------------------------------------------
-In GitBash
+In GitBash:
+Since your WAR file is on 54.164.125.178 in /opt/jenkins-java-project/target/netflix-clone.war, do this from your local machine’s Git Bash:
+
+scp -i "/c/Users/pathw/Downloads/kkfunda.pem" ec2-user@54.164.125.178:/opt/jenkins-java-project/target/netflix-clone.war "/c/Users/pathw/Downloads/"
+
+The first time, it will ask:
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+yes
+
+ls -l
+ls -l "/c/Users/pathw/Downloads/netflix-clone.war"
+
 
 scp -i "/c/Users/pathw/Downloads/kkfunda.pem" ec2-user@3.80.81.125:/opt/apache-maven-3.9.11/README.txt "/c/Users/pathw/Downloads/"
 Download an entire folder:
